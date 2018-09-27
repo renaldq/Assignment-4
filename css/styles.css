@@ -1,0 +1,383 @@
+/*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+G E N E R A L
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+/*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+H E A D E R
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
+header {
+    height: 80px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+    color: #1F2F16;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+  
+.nav-links {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    color: #1f1f1f;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #858585;
+}
+
+.hamburger-icon {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #1f1f1f;
+}
+
+.hamburger-icon:hover {
+    color: #858585;
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-icon {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+}
+
+
+/*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+H E R O
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
+.hero {
+    width: 100%;
+    height: 300px;
+    background:
+        radial-gradient(
+            rgba(0, 0, 0, 0.527),
+            #f5f5f58c
+        ),
+        url(https://images.unsplash.com/photo-1515510532701-5f751e184906?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=37e109f435fdd46757da104be11490f5&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #171717;
+    text-align: center;
+}
+
+.about-hero {
+    width: 100%;
+    height: 300px;
+    background:
+        radial-gradient(
+            rgba(0, 0, 0, 0.527),
+            #f5f5f58c
+        ),
+        url(https://images.unsplash.com/photo-1513624954087-ca7109c0f710?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6e62a7e25e5552ec806aa34e63efb0ee&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #171717;
+    text-align: center;
+}
+
+.products-hero {
+    width: 100%;
+    height: 300px;
+    background:
+        radial-gradient(
+            rgba(0, 0, 0, 0.527),
+            #f5f5f58c
+        ),
+        url(https://images.unsplash.com/photo-1507919981044-3b672b208db9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=67833ffc743dd72c487ad09b6b85fbbc&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #171717;
+    text-align: center;
+}
+
+.contact-hero {
+    width: 100%;
+    height: 300px;
+    background:
+        radial-gradient(
+            rgba(0, 0, 0, 0.527),
+            #f5f5f58c
+        ),
+        url(https://images.unsplash.com/photo-1504838986326-0f4d3ce9cf63?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f25ffba303f2d1115a7d98ca7a75010a&auto=format&fit=crop&w=1500&q=80);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #171717;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 42px;
+    color: white;
+    margin-bottom: 32px;
+}
+
+button {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background: white;
+    border: none;
+    color: black;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+button:hover {
+    color: #b95655;
+}
+
+
+/* about main section */
+
+main {
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.person-1-card, .person-2-card, .person-3-card {
+    width: 150px;
+    height: 400px;
+    /* background: #858585; */
+    /* border-radius: 300px; */
+}
+
+.person-1-photo-container, .person-2-photo-container, .person-3-photo-container {
+    width: 100%;
+    height: 150px;
+    /* background: red; */
+    border-radius: 300px;
+}
+
+.person-1-photo-container {
+    background: url(https://images.unsplash.com/photo-1529122581445-c5b6773d7cdf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0efc5e0c88a48b65bbe9f252bef75e28&auto=format&fit=crop&w=334&q=80);
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.person-1-photo-container:hover {
+    filter: grayscale(0%);
+}
+
+
+.person-2-photo-container {
+    background: url(https://images.unsplash.com/photo-1529074723-3167de44a1da?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=10185db19b32104ef7087e23d2a1927f&auto=format&fit=crop&w=375&q=80);
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.person-2-photo-container:hover {
+    filter: grayscale(0%);
+}
+
+.person-3-photo-container {
+    background: url(https://images.unsplash.com/photo-1504280052105-d302e531fa3d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e6d8229fc712471d43df5c56d54e1bb7&auto=format&fit=crop&w=751&q=80);
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.person-3-photo-container:hover {
+    filter: grayscale(0%);
+}
+
+/*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+M A I N
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
+/* main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+} */
+
+.h2-container {
+    width: 50%;
+    padding-right: 20px;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 2px;
+    font-size: 36px;
+    text-align: justify;
+    color: #858585;
+}
+
+span {
+    color: #b95655;
+}
+
+.paragraph-container {
+    width: 50%;
+    border-left: solid;
+    border-left-width: thin;
+    padding-left: 20px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: justify;
+    color: #1f1f1f;
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    .h2-container {
+       width: 100%;
+    }
+
+    .paragraph-container {
+        width: 100%;
+        padding-left: 0;
+        border: none;
+        border-top: solid;
+        border-top-width: thin;
+    }
+}
+
+
+/*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+F O O T E R
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(160deg, #efefef, #ffffff71);
+    display: flex;
+    flex-direction: row;
+}
+
+h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: underline;
+    margin-top: 0;
+}
+
+.company-and-legal-section {
+    width: 50%;
+    display: flex;
+    /* justify-content: space-between; */
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.company-section, .legal-section {
+    width: 200px;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+.social-media-section {
+    width: 50%;
+}
+
+.social-media-section ul {
+    /* color: #1f1f1f; */
+    display: flex;
+}
+
+.social-icons a {
+    margin-right: 40px;
+    color: #1f1f1f;
+}
+
+footer ul li a:hover {
+    color: #858585;
+}
+
+.social-icons a:hover {
+    color: #b95655;
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .company-and-legal-section {
+        width: 100%;
+    }
+
+    .social-media-section {
+        width: 100%;
+        margin-left: 20px;
+    }
+}
