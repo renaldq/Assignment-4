@@ -115,8 +115,11 @@ H E A D E R
 }
 
 .hamburger-icon {
-    color: #171717;
     display: none;
+}
+
+.hamburger-icon a i {
+    color: #171717;
 }
 
 .nav-links-container {
@@ -147,6 +150,34 @@ H E A D E R
     border-bottom-color: #7FEFBD;
 }
 
+.mobile-nav-links-container {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-nav-links-container li {
+    list-style: none;
+    padding: 20px;
+}
+
+.mobile-nav-links-container li a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #171717;
+}
+
+.mobile-nav-links-container li a:hover {
+    border-bottom: solid;
+    border-bottom-color: #7FEFBD;
+}
+
 @media (max-width: 600px) {
 
     .left-logo-container {
@@ -159,15 +190,39 @@ H E A D E R
     }
 
     .hamburger-icon {
-        width: 50%;
         display: flex;
         justify-content: flex-end;
+        width: 50%;
         padding-right: 20px;
     }
 
     .nav-links-container {
         display: none;
     }
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgb(255, 255, 255); /* White*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
 }
 
 

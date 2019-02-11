@@ -27,7 +27,7 @@
                     <i class="fas fa-search"></i>
                 </div>
                 <div class="hamburger-icon">
-                    <i class="fas fa-bars"></i>
+                    <a href="#" onclick="openNav()"><i class="fas fa-bars fa-lg"></i></a>
                 </div>
             </div>
             <ul class="nav-links-container">
@@ -37,7 +37,16 @@
                 <li><a href="./contact.html">Contact</a></li>
             </div>
         </header>
-        <!-- <script src="./js/mobile-nav.js"></script> -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="mobile-nav-links-container">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <script src="./js/mobile-nav.js"></script>
         <!-- HERO SECTION -->
         <div class="about-hero">
             <h1>About</h1>
